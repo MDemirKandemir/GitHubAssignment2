@@ -4,8 +4,6 @@
  * @date 25.09.2024
  * 
  */
-import java.lang.reflect.Array;
-import java.util.Arrays;
 import java.util.Random;
 
 public class HW2Functions 
@@ -25,7 +23,7 @@ public class HW2Functions
         
         evenSum = 0;
         oddSum = 0;
-        arraySize = Array.getLength(givenArray);
+        arraySize = givenArray.length;
 
         for(int i = 0; i<arraySize; i++ )
         {
@@ -45,7 +43,6 @@ public class HW2Functions
         return output;
     }
 
-    
     public static int[] findMinMax(int[] arr){
 
         int max = 0;
@@ -66,6 +63,7 @@ public class HW2Functions
         minMax[1] = max;
         return minMax;
     }
+
      public static int[] arr(int length){
         Random rand = new Random();
         int[] arr = new int[length];
