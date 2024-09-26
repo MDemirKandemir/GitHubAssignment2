@@ -4,6 +4,7 @@
  * @date 25.09.2024
  * 
  */
+import java.util.Arrays;
 import java.util.Random;
 
 public class HW2Functions 
@@ -78,25 +79,22 @@ public class HW2Functions
      * @return integer array
     */
 
-    public static int[] differenceWithAverage (int[] array)
+    public static void differenceWithAverage (int[] array)
     {
-        int numbersOfElements;
         int average;    
-        numbersOfElements = (array.length)-1;
         int sum;
         sum=0;
-        for(int i=0; i<numbersOfElements; i++)
+        for(int i=0; i<array.length; i++)
         {
             sum += array[i];
         }
-        average = (sum/numbersOfElements);
-        int[] newArray = new int[numbersOfElements];
-        for(int i=0; i<numbersOfElements; i++)
+        average = (sum/array.length);
+        int[] newArray = new int[array.length];
+        for(int i=0; i<array.length; i++)
         {
             newArray[i] = array[i]-average;
         }
-        return newArray;
-
+        System.out.println(Arrays.toString(newArray));
 
     }
 }
