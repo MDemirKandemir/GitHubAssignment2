@@ -1,4 +1,4 @@
-/* A class that contains array functions of HW1
+/* A program that  is made for HW1
  * 
  * @authors Mustafa Demir Kandemir, Zeynep Avcı, Azra Giray, Necati Kaan Aydınlı
  * @date 25.09.2024
